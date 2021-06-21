@@ -1,0 +1,52 @@
+/*
+font-family: 'Poppins', sans-serif;
+font-family: 'Rubik', sans-serif;
+*/
+
+@mixin grdAzulEsc {
+    background: linear-gradient(180deg, rgba(8, 46, 73, 1) 0%, rgba(7, 48, 77, 0.802) 100%);
+    box-shadow: 3px 3px 10px #111111ab;
+}
+
+@mixin grdAzul {
+    background: linear-gradient(180deg, rgb(190, 209, 223) 0%, #f2f9ff 65%);
+}
+
+@mixin transPreto {
+    background:  radial-gradient(circle, rgba(25, 49, 66, 0.452) 0%, rgba(87, 137, 175, 0.802) 100%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-item {
+    font-family: 'Rubik', sans-serif;
+}
+
+p,
+span,
+pre,
+legend,
+input {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    @include grdAzulEsc;
+
+    .logo {
+        height: 60px;
+    }
+}
+
+.begin {
+    background:radial-gradient(circle, rgba(25, 49, 66, 0.452) 0%, rgba(87, 137, 175, 0.802) 100%), url("/img/back.jpeg") no-repeat;
+    background-size: cover ;
+    .welcome{
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.952);
+       
+    }
+}
