@@ -1,8 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="">
+<html lang="pt-br">
+<script defer src="https://friconix.com/cdn/friconix.js"> </script>
 
 <head>
+
     <meta charset="utf-8">
+    <meta name="title" content="Ripple - Automação e Elétrica">
+    <meta name="description"
+        content="Olá, somos a Ripple Automação e Elétrica, uma empresa de Serviços e Soluções para residências, comércios e industrias e Governador Valadares e Região.">
+    <meta name="keywords" content="automação, eletrica, Governador Valadares, automação residencial">
+    <meta name="robots" content="index, nofollow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="Portuguese">
+    <meta name="author" content="LyraThor">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ripple - Automação e Elétrica</title>
@@ -11,32 +21,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bulma-pageloader.min.css">
-    <link rel="shortcut icon" href="/img/logo-round.jpeg">
+    <link rel="shortcut icon" href="/img/logo-round.png">
 </head>
 
 <body class="background ">
     <nav class="navbar is-transparent is-fixed-top">
         <div class="container">
+            <div class="navbar-brand">
+                <a class="p-3 is-hidden-mobile is-hidden-touch" href="https://bulma.io">
+                    <img src="img/logo-removebg.png" class="logo">
+                </a>
+                <a role="button" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+        
             <div class="navbar-menu">
-                <div class="navbar-brand">
-                    <a class="p-3" href="https://bulma.io">
-                        <img src="img/logo-removebg.png" class="logo">
-                    </a>
-                </div>
                 <div class="navbar-end is-uppercase px-3">
-                    <a href="" class="navbar-item has-text-white">Quem somos</a>
-                    <a href="#" class="navbar-item has-text-white">Serviços</a><a href=""
-                        class="navbar-item has-text-white">Galeria</a><a href=""
-                        class="navbar-item has-text-white">Contato</a>
+                    <a href="#servicos" class="navbar-item has-text-white">Serviços</a>
+                    <a href="#localizacao" class="navbar-item has-text-white">Localização</a>
+                    <a href="#contato" class="navbar-item has-text-white">Contato</a>
                 </div>
             </div>
+
         </div>
     </nav>
-    <section class="begin hero is-large">
+
+    <section class="begin hero is-medium">
         <div class="hero-body">
             <div class="content p-6 welcome">
                 <p class="title has-text-white is-uppercase">Venha conhecer a Ripple!</p>
-                <p class="subtitle has-text-white">Olá, somos a Ripple Automação e Elétrica, uma empresa de Serviços e
+                <p class="subtitle has-text-white pr-6">Olá, somos a Ripple Automação e Elétrica, uma empresa de
+                    Serviços e
                     Soluções para
                     residências, comércios e industrias e Governador Valadares e Região.</p>
             </div>
@@ -44,26 +63,28 @@
         </div>
 
     </section>
-    <section class="section servicos">
-        <div class="container">
-            <div class="columns px-3 is-centered is-gapless">
-                <div class="column has-background-warning ensino is-one-third">
-                    <div class="content p-5">
-                        <p class="title">Residência</p>
+
+    <section class="section servicos has-background-link-dark">
+        <div class="container py-6">
+            <div class="columns px-3 is-centered">
+                <div class="column py-6 px-5 has-background-warning ensino is-one-third">
+                    <div class="content">
+                        <p class="title mb-6 px-4 has-text-centered">Residência</p>
                         <p class="subtitle">Soluções em automação residencial, instalações e projetos elétricos.</p>
 
                     </div>
 
                 </div>
-                <div class="column has-background-info ensino is-one-third">
-                    <div class="content p-5">
-                        <p class="title">Comércio</p>
-                        <p class="subtitle">Projetos elétricos, instalações de máquinas, rede elétrica e automação.</p>
+                <div class="column py-6 px-4 has-background-info ensino is-one-third">
+                    <div class="content">
+                        <p class="title mb-6 has-text-centered">Comércio</p>
+                        <p class="subtitle">Projetos elétricos, instalações de máquinas, rede elétrica e automação.
+                        </p>
                     </div>
                 </div>
-                <div class="column is-one-third ensino has-background-danger">
-                    <div class=" p-5 content">
-                        <p class="title">Indústria</p>
+                <div class="column py-6 px-4 is-one-third ensino has-background-danger">
+                    <div class="content">
+                        <p class="title mb-6 has-text-centered">Indústria</p>
                         <p class="subtitle">Instalação e acionamento de máquinas pesadas, projetos de automação em
                             geral.
                         </p>
@@ -72,61 +93,287 @@
                 </div>
             </div>
         </div>
+        <a name="servicos"></a>
     </section>
 
-    <section class="section">
-        <a name="galeria"></a>
-        <div class="content">
-            <h2 class="title">Serviços</h2>
+    <section class="section galeria">
+
+        <div class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <p class="image is-5by3 ">
+                    <img id="imgModal" src="" alt="">
+                </p>
+            </div>
+            <button id="btnModal" class="modal-close is-large has-background-danger" aria-label="close"></button>
         </div>
 
-        <div class="columns  is-multiline">
-            <div class="column is-one-third content">
-                <figure class="image">
-                    <img src="https://via.placeholder.com/150">
-                    <figcaption class="has-text-weight-bold is-centered">Paquinho recreativo</figcaption>
-                </figure>
-            </div>
-            <div class="column is-one-third content">
-                <figure class="image">
-                    <img src="https://via.placeholder.com/150">
-                    <figcaption class="has-text-weight-bold is-centered">Laboratório de informática</figcaption>
-                </figure>
-            </div>
-            <div class="column is-one-third content">
-                <figure class="image">
-                    <img src="https://via.placeholder.com/150">
-                    <figcaption class="has-text-weight-bold is-centered">Pátio para recreação</figcaption>
-                </figure>
+
+        <div class="container px-6">
+            <div class="content">
+                <h2 class="title has-text-centered has-text-white pb-6">Serviços</h2>
             </div>
 
-            <div class="column is-one-third content">
-                <figure class="image">
-                    <img src="https://via.placeholder.com/150">
-                    <figcaption class="has-text-weight-bold is-centered">Teatro</figcaption>
-                </figure>
+            <div class="columns is-multiline px-3 is-vcentered is-centered">
+                <div class="column py-6 px-5 is-one-third">
+                    <div class="content">
+                        <h3 class="mb-6 has-text-centered has-text-white">Projetos Elétricos</h3>
+                        <figure class="image is-5by3">
+                            <img src="img/ele1.jpg">
+                        </figure>
+                        <p class="has-text-centered has-text-white">Projetos elétricos que proporcionam economia de
+                            energia e qualidade de energia em sua residência e comércio.</p>
+
+                    </div>
+
+                </div>
+                <div class="column py-6 px-5 is-one-third">
+                    <div class="content">
+                        <h3 class="mb-6 has-text-centered has-text-white">Projetos de Automação</h3>
+                        <figure class="image is-5by3">
+                            <img src="img/ele2.jpg">
+                        </figure>
+                        <p class="has-text-centered has-text-white">Soluções para sua indústria, comércio e
+                            agronegócio, com tecnologia de ponta.
+                        </p>
+                    </div>
+                </div>
+                <div class="column py-6 px-5 is-one-third"">
+                    <div class=" content">
+                    <h3 class="mb-6 has-text-centered has-text-white">Instalação e Acionamento de Máquinas Pesadas</h3>
+                    <figure class="image is-5by3">
+                        <img src="img/ele3.jpg">
+                    </figure>
+                    <p class="has-text-centered has-text-white">Instalação de máquinas em oficinas e pequenas
+                        indústrias urbanas ou rurais.
+                    </p>
+
+                </div>
             </div>
 
+            <div class="column py-6 px-5 is-one-third">
+                <div class="content">
+                    <h3 class="mb-6 has-text-centered has-text-white">Automação Residencial</h3>
+                    <figure class="image is-5by3">
+                        <img src="img/ele4.jpg">
+                    </figure>
+                    <p class="has-text-centered has-text-white">O controle da sua residência na palma da mão.</p>
 
-            <div class="column is-one-third content">
-                <figure class="image">
-                    <img src="https://via.placeholder.com/150">
-                    <figcaption class="has-text-weight-bold is-centered">Laboratório de enfermagem</figcaption>
-                </figure>
+                </div>
+
             </div>
-
-
-            <div class="column is-one-third content">
-                <figure class="image">
-                    <img src="https://via.placeholder.com/150">
-                    <figcaption class="has-text-weight-bold is-centered">Portão de entrada do fundamental
-                    </figcaption>
-                </figure>
+            <div class="column py-6 px-5 is-one-third">
+                <div class="content">
+                    <h3 class="mb-6 has-text-centered has-text-white">Instalação Elétrica Residencial</h3>
+                    <figure class="image is-5by3">
+                        <img src="img/ele5.jpg">
+                    </figure>
+                    <p class="has-text-centered has-text-white">Projetos elétricos, instalações de máquinas, rede
+                        elétrica e automação.
+                    </p>
+                </div>
             </div>
+        </div>
         </div>
     </section>
+
+    <section class="section has-background-white localizacao">
+        <div class="container">
+            <a name="localizacao"></a>
+            <h2 class="title is-uppercase">Localização</h2>
+            <div class="columns is-vcentered">
+                <div class="column is-two-thirds">
+                    <picture class="image is-16by9"><iframe class="has-ratio"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d943.9651246406455!2d-41.9587567!3d-18.8488696!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb1a7b1346539a5%3A0xe2e7e969d376e947!2zUmlwcGxlIEF1dG9tYcOnw6NvIGUgRWzDqXRyaWNh!5e0!3m2!1spt-BR!2sbr!4v1624673503621!5m2!1spt-BR!2sbr"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </picture>
+                </div>
+                <div class="column">
+                    <ul class="lista has-text-centered-mobile">
+                        <li class="my-6">
+
+                            <span class="icon mx-2">
+                                <i class="fi-cnsuxl-facebook-circle has-text-info"></i>
+                            </span>
+                            <a class="item" href="https://www.facebook.com/rippleautomacao">
+                                /rippleautomacao</a>
+
+                        </li>
+                        <li class="my-6">
+
+                            <span class="icon mx-2">
+                                <i class="fi-xnsuxl-whatsapp has-text-success"></i>
+                            </span>
+                            <a class="item" href="https://api.whatsapp.com/send?phone=55339950-8567">
+                                (33) 9 9950-8567</a>
+                        </li>
+                        </li>
+                        <li class="my-6">
+
+                            <span class="icon mx-2">
+                                <i class=" fi-cnsrxl-phone-solid has-text-success-dark"></i>
+                            </span>
+                            <a class="item" href="tel:21553399508567">
+                                (33) 9 9950-8567</a>
+
+                        </li>
+                        <li class="my-6">
+                            <span class="icon mx-2">
+                                <i class="fi-xnsuxl-map-marker-solid has-text-danger"></i>
+                            </span>
+                            <a class="item"
+                                href="https://www.google.com/maps?ll=-18.849039,-41.958344&z=18&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=16350293612920498503">R.
+                                Espanha, 585 -
+                                Grã-Duquesa, Gov. Valadares - MG, 35057-180</a>
+                            <a name="contato"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contato  p-5">
+        <div class="columns m-5 ">
+            <div class="column is-one-third">
+
+                <div class="content">
+                    <h3 class="title has-text-white">Entre em contato conosco</h3>
+                    <p class="has-text-white">Utilize esse formulário para entrar em contato, tire dúvidas, envie
+                        recomendações.</p>
+                </div>
+
+            </div>
+            <div class="column">
+                <form action="enviar.php" name="form_contato" method="POST">
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label has-text-white">Identificação</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <p class="control is-expanded has-icons-left">
+                                    <input class="input" name="nome" type="text" placeholder="Seu nome" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="fi-cnsuxl-user-tie-circle"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="field">
+                                <p class="control is-expanded has-icons-left">
+                                    <input class="input" name="email" type="email" placeholder="Email" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="fi-xwsuxl-envelope-solid"></i>
+                                    </span>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field is-horizontal">
+                        <div class="field-label"></div>
+                        <div class="field-body">
+                            <div class="field is-expanded">
+                                <div class="field has-addons">
+
+                                    <p class="control is-expanded has-icons-left">
+
+                                        <input class="input" name="telefone" type="tel"
+                                            placeholder="Número do seu telefone com DDD" data-mask="(999) 999-9999"
+                                            placeholder required>
+                                        <span class="icon is-small is-left">
+                                            <i class="fi-xnsrxl-phone-solid"></i>
+                                        </span>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label has-text-white">Motivo do contato</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field is-narrow">
+                                <div class="control">
+                                    <div class="select is-fullwidth">
+                                        <select name="motivo">
+                                            <option>Dúvidas</option>
+                                            <option>Serviço</option>
+                                            <option>Sugestão</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label has-text-white">Assunto</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input" name="assunto" type="text"
+                                        placeholder="Idendifique o motivo do contato" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label has-text-white">Conteúdo</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <textarea class="textarea" name="corpo"
+                                        placeholder="Escreva sobre o motivo do contato" required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field is-horizontal">
+                        <div class="field-label">
+                         
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <button class="button is-primary">
+                                        <i class="fi-cwluxl-check" style="padding-right: 10px;"></i><span> Enviar
+                                            mensagem</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    </div>
+    </section>
+    <footer class="footer has-text-centered has-background-info ">
+        <div class="is-flex is-justify-content-center">
+            <div class="image mb-6 is-128x128">
+                <img class=" is-rounded p-3 has-background-white" src="img/logo-round.png"></div>
+        </div>
+        <p class="is-uppercase is-bold has-text-centered has-text-white">2020 | Todos os direitos reservados</p>
+    </footer>
 
     <script src="js/func.js"></script>
+
 </body>
 
 </html>
